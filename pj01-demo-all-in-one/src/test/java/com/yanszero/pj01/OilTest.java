@@ -64,6 +64,13 @@ public class OilTest {
   }
 
   @Test
+  public void testSubString(){
+    String strTest = "app.jpg".substring("app.jpg".lastIndexOf("."));
+    System.out.println("strTest=" + strTest);
+  }
+
+
+  @Test
   public void testGetConnection() {
 
     //測試連結用
