@@ -13,6 +13,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# 除了這個文件
+!.gitignore
+
 # Package Files #
 *.jar
 *.war
