@@ -14,7 +14,7 @@
 .mtj.tmp/
 
 # 除了這個文件
-!.gitignore
+!.keep
 
 # Package Files #
 *.jar
