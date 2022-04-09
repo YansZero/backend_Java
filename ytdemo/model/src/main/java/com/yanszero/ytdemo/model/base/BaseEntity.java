@@ -15,8 +15,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Data
-//核心類
-@Repository
 public class BaseEntity implements Serializable {
 
 //    @ApiModelProperty(value = "id")
@@ -26,11 +24,11 @@ public class BaseEntity implements Serializable {
     @ApiModelProperty(value = "建立時間")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @TableField("create_time")
-    private Date create_Time;
+    private Date createTime;
 
     @ApiModelProperty(value = "修改時間")
     @TableField("update_time")
-    private Date update_Time;
+    private Date updateTime;
 
     @ApiModelProperty(value = "邏輯删除(1:已删除，0:未删除)")
     @TableLogic

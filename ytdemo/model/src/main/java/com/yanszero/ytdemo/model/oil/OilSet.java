@@ -21,33 +21,34 @@ import java.util.Date;
 @TableName("oil")
 public class OilSet extends BaseEntity {
 
-    //@ApiModelProperty(value = "公告日期")
+    // 記得變數命名時 底線要去除 不然mybatis 回傳會為NULL
+    @ApiModelProperty(value = "公告日期")
     @JsonFormat(pattern = "yyyy-MM-dd")
     @TableField("price_date")
     private Date priceDate;
 
-    //@ApiModelProperty(value = "92無鉛汽油")
+    @ApiModelProperty(value = "92無鉛汽油")
     @TableField("oil_92")
-    private BigDecimal oil_92;
+    private BigDecimal oil92;
 
-    //@ApiModelProperty(value = "95無鉛汽油")
+    @ApiModelProperty(value = "95無鉛汽油")
     @TableField("oil_95")
-    private BigDecimal oil_95;
+    private BigDecimal oil95;
 
-    //@ApiModelProperty(value = "98無鉛汽油")
+    @ApiModelProperty(value = "98無鉛汽油")
     @TableField("oil_92")
-    private BigDecimal oil_98;
+    private BigDecimal oil98;
 
-   // @ApiModelProperty(value = "超級/高級柴油")
+    @ApiModelProperty(value = "超級/高級柴油")
     @TableField("diesel_fuel")
-    private BigDecimal diesel_fuel;
+    private BigDecimal dieselFuel;
 
     @ApiModelProperty(value = "建立者")
     @TableField("create_by")
-    private String create_by;
+    private String createBy;
 
     @ApiModelProperty(value = "修改者")
     @TableField("update_by")
-    private String update_by;
+    private String updateBy;
 
 }

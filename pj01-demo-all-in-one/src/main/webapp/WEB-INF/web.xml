@@ -4,7 +4,22 @@
            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
            version="2.5">
-    
+    <!--配置WEB 應用初始化參數 指定視覺圖 前綴後綴 -->
+    <!--
+        物理試圖舉例 : /WEB-INF/pages/index.html
+        對應邏輯試圖 : index
+    -->
+    <context-param>
+        <!-- 前綴要抓的檔案路徑-->
+        <param-name>view-prefix</param-name>
+        <param-value>/WEB-INF/pages</param-value>
+    </context-param>
+    <context-param>
+        <!-- 後綴要抓的檔案類型-->
+        <param-name>view-suffix</param-name>
+        <param-value>.html</param-value>
+    </context-param>
+
     <filter>
         <filter-name>txFilter</filter-name>
         <filter-class>com.yanszero.pj01.filter.TransactionFilter</filter-class>
