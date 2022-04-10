@@ -36,7 +36,7 @@ public class OilSet extends BaseEntity {
     private BigDecimal oil95;
 
     @ApiModelProperty(value = "98無鉛汽油")
-    @TableField("oil_92")
+    @TableField("oil_98")
     private BigDecimal oil98;
 
     @ApiModelProperty(value = "超級/高級柴油")

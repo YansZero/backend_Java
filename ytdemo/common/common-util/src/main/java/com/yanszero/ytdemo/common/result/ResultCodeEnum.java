@@ -15,6 +15,10 @@ public enum ResultCodeEnum {
     DATA_ERROR(204, "資料異常"),
     DATA_UPDATE_ERROR(205, "資料版本異常"),
 
+    SAVE_ERROR(260,"新增異常"),
+    UPDATE_ERROR(261,"修改異常"),
+    DELETE_ERROR(261,"刪除異常"),
+
     LOGIN_AUTH(208, "未登入"),
     PERMISSION(209, "没有權限"),
 
